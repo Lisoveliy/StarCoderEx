@@ -2,6 +2,7 @@
   "name": "starcoderex",
   "displayName": "StarCoderEx",
   "description": "Extension for using alternative GitHub Copilot (StarCoder API) in VSCode",
+  "repository": "https://github.com/Lisoveliy/starcoderex",
   "version": "0.9.0",
   "engines": {
     "vscode": "^1.78.0"
@@ -15,7 +16,7 @@
     "commands": [
       {
         "command": "starcoderex.ScanSel",
-        "title": "Prompt selected"
+        "title": "Prompt selected code"
       }
     ],
     "keybindings": [
