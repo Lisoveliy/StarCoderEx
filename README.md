@@ -27,11 +27,11 @@ Usage:
 ## Notes for prompt
 
 Good prompt: 
-                //POST Request on JSON to url variable
-                //Params: url, object
-                function /* Good variant use Language syntax */
+        //POST Request on JSON to url variable
+        //Params: url, object
+        function /* Good variant use Language syntax */
 Bad prompt:
-                //Create JavaScript function for send POST request using fetch
+        //Create JavaScript function for send POST request using fetch
 
 ## Extension Settings
 
