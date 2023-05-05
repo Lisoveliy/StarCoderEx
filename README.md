@@ -13,7 +13,7 @@ Usage:
 ***If you use extension on first time***
 1. Register on https://huggingface.co
 
-2. Generate bearer token from that page https://huggingface.co/settings/tokens
+2. Generate bearer token from this page https://huggingface.co/settings/tokens
 
 ***After***
 
