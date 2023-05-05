@@ -35,7 +35,7 @@ This extension contributes the following settings:
 ## Release Notes
 
 ### 0.9.54
-Downgraded VS Code engine supported to 1.76.0
+Downgraded VS Code engine supported to 1.67.0
 ### 0.9.5
 Minor Fixes
 
