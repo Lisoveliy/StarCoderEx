@@ -7,7 +7,7 @@ Original AI https://huggingface.co/bigcode/starcoder
 ## Features
 
 AI Prompt generating code for you from selection.
-
+![ezgif-5-bb558e76b1](https://user-images.githubusercontent.com/56991906/236499941-acd34143-beea-4e26-9a75-8c66950f7513.gif)
 Usage:
 
 ***If you use extension on first time***
