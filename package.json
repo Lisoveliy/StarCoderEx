@@ -1,6 +1,6 @@
 {
   "name": "starcoderex",
-  "displayName": "StarCoderEx (AI Code generator)",
+  "displayName": "StarCoderEx (AI code generator)",
   "description": "Extension for using alternative GitHub Copilot (StarCoder API) in VSCode",
   "repository": "https://github.com/Lisoveliy/starcoderex",
   "icon": "logo.png",
@@ -10,7 +10,7 @@
     "vscode": "^1.78.0"
   },
   "categories": [
-    "Other"
+    "Other", "Formatters", "Machine Learning", "Programming Languages", "Snippets"
   ],
   "activationEvents": [],
   "main": "./out/extension.js",
@@ -33,7 +33,7 @@
         "properties": {
           "starcoderex.countofrequests": {
             "type": "integer",
-            "default": 5
+            "default": 3
           },
           "starcoderex.bearertoken": {
             "type": "string",

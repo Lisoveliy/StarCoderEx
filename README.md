@@ -3,10 +3,10 @@
 StarCoderExtension for AI Code generation
 
 
-Original AI https://huggingface.co/bigcode/starcoder
+Original AI: https://huggingface.co/bigcode/starcoder
 ## Features
 
-AI Prompt generating code for you from selection.
+AI prompt generating code for you from cursor selection.
 ![demo](https://user-images.githubusercontent.com/56991906/236499941-acd34143-beea-4e26-9a75-8c66950f7513.gif)
 Usage:
 
@@ -15,10 +15,11 @@ Usage:
 
 2. Generate bearer token from that page https://huggingface.co/settings/tokens
 
+***After***
 
-1. Select your prompt in code
+1. Select your prompt in code using cursor selection
 
-2. Press Ctrl+Alt+P for generating prompt or type in shell (Ctrl+Shift+P) `starcoderex.ScanSel`
+2. Press Ctrl+Alt+P for generating prompt OR type in shell (Ctrl+Shift+P) `starcoderex.ScanSel`
 
 3. (If you use extension on first time) enter bearer token from https://huggingface.co/settings/tokens
 
