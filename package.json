@@ -4,7 +4,7 @@
   "description": "Extension for using alternative GitHub Copilot (StarCoder API) in VSCode",
   "repository": "https://github.com/Lisoveliy/starcoderex",
   "icon": "logo.png",
-  "version": "0.9.54",
+  "version": "1.0.0",
   "publisher": "Lisoveliy",
   "engines": {
     "vscode": "^1.67.0"
@@ -23,6 +23,10 @@
       {
         "command": "starcoderex.ScanSel",
         "title": "Prompt selected code"
+      },
+      {
+        "command": "starcoderex.StartLifeTime",
+        "title": "Start lifetime generating requests"
       }
     ],
     "keybindings": [
@@ -37,7 +41,7 @@
         "properties": {
           "starcoderex.countofrequests": {
             "type": "integer",
-            "default": 3
+            "default": 4
           },
           "starcoderex.bearertoken": {
             "type": "string",

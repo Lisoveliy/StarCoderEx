@@ -13,7 +13,6 @@ export default async function (){
         vscode.window.showWarningMessage("Empty selection");
         return;
     }
-	//vscode.window.showInformationMessage("Prompt executing...");
     console.log("Prompt: ", text);
     let result: string | null;
     let requests: number = vscode.workspace.getConfiguration("starcoderex").get("countofrequests")!;
@@ -24,7 +23,6 @@ export default async function (){
     }, async (progress) => {
         for(let i = 0; i < requests; i++){
             result = await request(text);
-            //vscode.window.showInformationMessage(`Generating answer... ${i}/${requests}`);
             if(!result){
                 return;
             }
@@ -35,7 +33,7 @@ export default async function (){
             edBuiler.delete(selection);
             setTimeout(() => {
                 editor.insertSnippet(new vscode.SnippetString(result!), editor.selection.start);
-            }, 10);
+            }, 50);
             progress.report({ increment: 100 });
             vscode.window.showInformationMessage("Done!");
         });
