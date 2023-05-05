@@ -11,7 +11,7 @@ export function activate(context: vscode.ExtensionContext) {
 		updatetoken();
 	}
 	let scandoc = vscode.commands.registerCommand('starcoderex.ScanSel', async () => {
-		await scansel();
+			scansel();
 	});
 	context.subscriptions.push(scandoc);
 }
