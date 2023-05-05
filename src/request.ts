@@ -3,7 +3,6 @@ import * as vscode from "vscode";
 import updatetoken from "./updatetoken";
 
 export default async (input: string): Promise<string | null> =>{
-	
 	console.log(`Input: ${input}`);
 	let response = await fetch("https://api-inference.huggingface.co/models/bigcode/starcoder",
 		{

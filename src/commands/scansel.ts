@@ -13,6 +13,10 @@ export default async function (){
     console.log("Prompt: ", text);
     let result: string | null;
     let requests: number = vscode.workspace.getConfiguration("starcoderex").get("countofrequests")!;
+    if(text == ""){
+        vscode.window.showWarningMessage("Empty selection");
+        return;
+    }
     for(let i = 0; i < requests; i++){
         result = await request(text);
         if(!result){
