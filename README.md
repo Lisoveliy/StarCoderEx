@@ -20,11 +20,13 @@ Usage:
 
 This extension contributes the following settings:
 
-* `starcoderex.countofrequests`: Set requests count per command
+* `starcoderex.countofrequests`: Set requests count per command (Default: 3)
 * `starcoderex.bearertoken`: Set bearer token from https://huggingface.co
 
 ## Release Notes
 
+### 0.9.3
+Fix reset with bearer token
 
 ### 0.9.0
 
