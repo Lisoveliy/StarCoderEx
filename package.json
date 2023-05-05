@@ -2,7 +2,7 @@
   "name": "starcoderex",
   "displayName": "StarCoderEx",
   "description": "Extension for using alternative GitHub Copilot (StarCoder API) in VSCode",
-  "version": "0.0.1",
+  "version": "0.9.0",
   "engines": {
     "vscode": "^1.78.0"
   },
@@ -14,12 +14,29 @@
   "contributes": {
     "commands": [
       {
-        "command": "starcoderex.ScanDoc",
-        "title": "Scan Doc"
-      },
+        "command": "starcoderex.ScanSel",
+        "title": "Prompt selected"
+      }
+    ],
+    "keybindings": [
       {
-        "command": "starcoderex.ContinueDoc",
-        "title": "Continue Doc"
+        "command": "starcoderex.ScanSel",
+        "key": "ctrl+alt+p"
+      }
+    ],
+    "configuration":[
+      {
+        "title": "StarCoderEx",
+        "properties": {
+          "starcoderex.countofrequests": {
+            "type": "integer",
+            "default": 3
+          },
+          "starcoderex.bearertoken": {
+            "type": "string",
+            "default": ""
+          }
+        }
       }
     ]
   },
