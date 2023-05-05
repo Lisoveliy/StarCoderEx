@@ -27,22 +27,11 @@ Usage:
 ## Notes for prompt
 
 Good prompt: 
-
-                //POST Request on JSON to url variable
-                //Params: url, object
-                function /* Good variant use Language syntax */
-               
-Result: 
-
-![image](https://user-images.githubusercontent.com/56991906/236544392-e170c33e-11c4-489a-bf76-004c95f57526.png)
-
+        //POST Request on JSON to url variable
+        //Params: url, object
+        function /* Good variant use Language syntax */
 Bad prompt:
-
-                //Create JavaScript function for send POST request using fetch
-
-Result:
-
-![image](https://user-images.githubusercontent.com/56991906/236544491-c60991d1-3038-4177-b182-be2e8919eae8.png)
+        //Create JavaScript function for send POST request using fetch
 
 ## Extension Settings
 
