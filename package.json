@@ -3,7 +3,9 @@
   "displayName": "StarCoderEx",
   "description": "Extension for using alternative GitHub Copilot (StarCoder API) in VSCode",
   "repository": "https://github.com/Lisoveliy/starcoderex",
+  "icon": "logo.png",
   "version": "0.9.0",
+  "publisher": "Lisoveliy",
   "engines": {
     "vscode": "^1.78.0"
   },
