@@ -3,6 +3,7 @@
 import * as vscode from 'vscode';
 import scansel from './commands/scansel.js';
 import updatetoken from './updatetoken.js';
+import lifetime from './commands/lifetime.js';
 
 export function activate(context: vscode.ExtensionContext) {
 	console.log('Extension "starcoderex" is now active!');
@@ -11,7 +12,10 @@ export function activate(context: vscode.ExtensionContext) {
 		updatetoken();
 	}
 	let scandoc = vscode.commands.registerCommand('starcoderex.ScanSel', async () => {
-			scansel();
+			await scansel();
+	});
+	let realtime = vscode.commands.registerCommand('starcoderex.StartLifeTime', async () => {
+			await lifetime();
 	});
 	context.subscriptions.push(scandoc);
 }
