@@ -13,7 +13,7 @@ export default async (input: string): Promise<string | null> =>{
 		});
 	if(response.status !== 200){
 		vscode.window.showErrorMessage("Bearer invalid!");
-		vscode.workspace.getConfiguration("starcoderex").update("bearertoken", "");
+		vscode.workspace.getConfiguration("starcoderex").update("bearertoken", "", vscode.ConfigurationTarget.Global);
 		updatetoken();
 		return null;
 	}
