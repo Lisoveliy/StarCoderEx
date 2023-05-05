@@ -33,7 +33,7 @@ export default async function (){
             edBuiler.delete(selection);
             setTimeout(() => {
                 editor.insertSnippet(new vscode.SnippetString(result!), editor.selection.start);
-            }, 10);
+            }, 50);
             progress.report({ increment: 100 });
             vscode.window.showInformationMessage("Done!");
         });

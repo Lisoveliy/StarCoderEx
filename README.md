@@ -24,16 +24,26 @@ Usage:
 3. (If you use extension on first time) enter bearer token from https://huggingface.co/settings/tokens
 
 4. PROFIT!
+## Notes for prompt
+
+Good prompt: 
+                //POST Request on JSON to url variable
+                //Params: url, object
+                function /* Good variant use Language syntax */
+Bad prompt:
+                //Create JavaScript function for send POST request using fetch
 
 ## Extension Settings
 
 This extension contributes the following settings:
 
-* `starcoderex.countofrequests`: Set requests count per command (Default: 3. Less count -> less answer, faster loading)
+* `starcoderex.countofrequests`: Set requests count per command (Default: 4. Less count -> less answer, faster loading)
 * `starcoderex.bearertoken`: Set bearer token for API https://huggingface.co
 
 ## Release Notes
 
+### 1.0.0
+Fixed sometimes removing code
 ### 0.9.54
 Downgraded VS Code engine supported to 1.67.0
 ### 0.9.5

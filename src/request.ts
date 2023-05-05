@@ -3,7 +3,7 @@ import * as vscode from "vscode";
 import updatetoken from "./updatetoken";
 
 export default async (input: string): Promise<string | null> =>{
-	console.log(`Input: ${input}`);
+	//console.log(`Input: ${input}`);
 	let response = await fetch("https://api-inference.huggingface.co/models/bigcode/starcoder",
 		{
 			// eslint-disable-next-line @typescript-eslint/naming-convention
@@ -18,6 +18,6 @@ export default async (input: string): Promise<string | null> =>{
 		return null;
 	}
 	let output = ((await response.json()) as ResponseModel[])[0].generated_text;
-	console.log(`Output: ${output}`);
+	console.log(`Output: ${output.length}`);
 	return output;
 };

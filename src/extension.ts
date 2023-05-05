@@ -14,9 +14,9 @@ export function activate(context: vscode.ExtensionContext) {
 	let scandoc = vscode.commands.registerCommand('starcoderex.ScanSel', async () => {
 			await scansel();
 	});
-	let realtime = vscode.commands.registerCommand('starcoderex.StartLifeTime', async () => {
-			await lifetime();
-	});
+	// let realtime = vscode.commands.registerCommand('starcoderex.StartLifeTime', async () => {
+	// 		await lifetime();
+	// });
 	context.subscriptions.push(scandoc);
 }
 
