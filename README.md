@@ -25,7 +25,7 @@ This extension contributes the following settings:
 
 ## Release Notes
 
-### 0.9.41
+### 0.9.42
 Fix reset with bearer token
 Fix reset with bearer token when selection is empty
 ### 0.9.3
