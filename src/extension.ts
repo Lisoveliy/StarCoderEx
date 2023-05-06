@@ -14,10 +14,18 @@ export function activate(context: vscode.ExtensionContext) {
 	let scandoc = vscode.commands.registerCommand('starcoderex.ScanSel', async () => {
 			await scansel();
 	});
+	let scandocprompt = vscode.commands.registerCommand('starcoderex.ScanSelPrompt', async () => {
+			await scansel();
+	});
+	let tokenscreen = vscode.commands.registerCommand('starcoderex.TokenScreen', async () => {
+			await updatetoken();
+	});
 	// let realtime = vscode.commands.registerCommand('starcoderex.StartLifeTime', async () => {
 	// 		await lifetime();
 	// });
 	context.subscriptions.push(scandoc);
+	context.subscriptions.push(scandocprompt);
+	context.subscriptions.push(tokenscreen);
 }
 
 // This method is called when your extension is deactivated

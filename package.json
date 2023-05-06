@@ -19,14 +19,33 @@
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
+    "menus": {
+      "commandPalette": [
+        {
+          "command": "starcoderex.ScanSelPrompt",
+          "group": "StarCoderEx"
+        },
+        {
+          "command": "starcoderex.TokenScreen",
+          "group": "StarCoderEx"
+        }  
+      ]
+    },
     "commands": [
       {
         "command": "starcoderex.ScanSel",
-        "title": "Prompt selected code"
+        "title": "Init prompt with selected code",
+        "category": "StarCoderEx"
       },
       {
-        "command": "starcoderex.StartLifeTime",
-        "title": "Start lifetime generating requests"
+        "command": "starcoderex.ScanSelPrompt",
+        "title": "Init prompt with selected code",
+        "category": "StarCoderEx"
+      },
+      {
+        "command": "starcoderex.TokenScreen",
+        "title": "Enter new token",
+        "category": "StarCoderEx"
       }
     ],
     "keybindings": [
