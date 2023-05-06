@@ -19,7 +19,7 @@ Usage:
 
 1. Select your prompt in code using cursor selection
 
-2. Press Ctrl+Alt+P for generating prompt OR type in shell (Ctrl+Shift+P) `StarCoderEx: Init Init prompt with selected code`
+2. Press Ctrl+Alt+P for generating prompt OR type in shell (Ctrl+Shift+P) `StarCoderEx: Init prompt with selected code`
 
 3. (If you use extension on first time) enter bearer token from https://huggingface.co/settings/tokens (page will be opened)
 
