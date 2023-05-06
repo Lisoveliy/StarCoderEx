@@ -1,5 +1,7 @@
 import * as vscode from "vscode";
 import request from "../request";
+import { ViewColumn } from "vscode";
+import { CommentMode } from "vscode";
 
 export default async function (){
     const editor = vscode.window.activeTextEditor;
@@ -22,7 +24,7 @@ export default async function (){
         title: 'Prompt executing...'
     }, async (progress) => {
         for(let i = 0; i < requests; i++){
-            progress.report({  increment: (i/requests*100) - 1 });
+            progress.report({  increment: ((1/requests)*100) - 1 });
             result = await request(text);
             if(!result){
                 return;
@@ -33,6 +35,15 @@ export default async function (){
             edBuiler.delete(selection);
         }).then(() => {
         progress.report({ increment: 100 });
+        //Docs window <START
+        // vscode.comments.createCommentController("123","123")
+        // .createCommentThread(
+        //     vscode.window.activeTextEditor?.document.uri!, 
+        //     new vscode.Range(editor.selection.active, editor.selection.end),
+        //     List));
+        //vscode.window.createQuickPick();
+        //vscode.window.createWebviewPanel("text","hello world", ViewColumn.Active, undefined);
+        //Docs window <END
         editor.insertSnippet(new vscode.SnippetString(result!), editor.selection.start);
         vscode.window.showInformationMessage("Done!");
         });
