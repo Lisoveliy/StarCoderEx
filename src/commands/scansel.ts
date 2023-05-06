@@ -13,18 +13,20 @@ export default async function (){
     let text = editor.document.getText(selection);
     if(text === ""){
         vscode.window.showWarningMessage("Empty selection");
-        return;
     }
     console.log("Prompt: ", text);
     let result: string | null;
     let requests: number = vscode.workspace.getConfiguration("starcoderex").get("countofrequests")!;
     vscode.window.withProgress({
         location: vscode.ProgressLocation.Notification,
-        cancellable: false,
-        title: 'Prompt executing...'
-    }, async (progress) => {
+        cancellable: true,
+        title: 'Prompt executing',
+    }, async (progress, token) => {
         for(let i = 0; i < requests; i++){
-            progress.report({  increment: ((1/requests)*100) - 1 });
+            if(token.isCancellationRequested){
+                return;
+            }
+            progress.report({  increment: ((1/requests)*100) - 1, message: `${i+1}/${requests}` });
             result = await request(text);
             if(!result){
                 return;
@@ -35,15 +37,6 @@ export default async function (){
             edBuiler.delete(selection);
         }).then(() => {
         progress.report({ increment: 100 });
-        //Docs window <START
-        // vscode.comments.createCommentController("123","123")
-        // .createCommentThread(
-        //     vscode.window.activeTextEditor?.document.uri!, 
-        //     new vscode.Range(editor.selection.active, editor.selection.end),
-        //     List));
-        //vscode.window.createQuickPick();
-        //vscode.window.createWebviewPanel("text","hello world", ViewColumn.Active, undefined);
-        //Docs window <END
         editor.insertSnippet(new vscode.SnippetString(result!), editor.selection.start);
         vscode.window.showInformationMessage("Done!");
         });
