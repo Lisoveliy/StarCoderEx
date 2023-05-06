@@ -8,6 +8,7 @@ Original AI: https://huggingface.co/bigcode/starcoder
 
 AI prompt generating code for you from cursor selection.
 ![demo](https://user-images.githubusercontent.com/56991906/236499941-acd34143-beea-4e26-9a75-8c66950f7513.gif)
+
 Usage:
 
 ***If you use extension on first time***
