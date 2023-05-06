@@ -19,9 +19,9 @@ Usage:
 
 1. Select your prompt in code using cursor selection
 
-2. Press Ctrl+Alt+P for generating prompt OR type in shell (Ctrl+Shift+P) `starcoderex.ScanSel`
+2. Press Ctrl+Alt+P for generating prompt OR type in shell (Ctrl+Shift+P) `StarCoderEx: Init Init prompt with selected code`
 
-3. (If you use extension on first time) enter bearer token from https://huggingface.co/settings/tokens
+3. (If you use extension on first time) enter bearer token from https://huggingface.co/settings/tokens (page will be opened)
 
 4. PROFIT!
 ## Notes for prompt
@@ -53,6 +53,12 @@ This extension contributes the following settings:
 
 ## Release Notes
 
+### 1.0.2
+Fixed blinking code when output was adding to editor
+
+Added message error when internet is disconnected
+
+Added commands in command palette
 ### 1.0.0
 Fixed sometimes removing code
 ### 0.9.54

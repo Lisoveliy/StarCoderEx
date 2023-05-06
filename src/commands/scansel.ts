@@ -6,7 +6,7 @@ export default async function (){
     if(!editor){
         vscode.window.showErrorMessage("Editor doesn't opened");
         return;
-    }    
+    }
     let selection = new vscode.Range(editor.selection.start, editor.selection.end);
     let text = editor.document.getText(selection);
     if(text === ""){
