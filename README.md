@@ -54,6 +54,8 @@ This extension contributes the following settings:
 
 ## Release Notes
 
+### 1.0.22
+Added cancel button
 ### 1.0.2
 Fixed blinking code when output was adding to editor
 
