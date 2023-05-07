@@ -26,7 +26,7 @@ Usage:
 
 4. PROFIT!
 
-5. ***If you want to continue request select all output including original prompt***
+5. ***If you want to continue request select all output including original prompt and repeat steps***
 ## Notes for prompt
 
 Good prompt: 
