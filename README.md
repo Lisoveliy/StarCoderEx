@@ -25,6 +25,8 @@ Usage:
 3. (If you use extension on first time) enter bearer token from https://huggingface.co/settings/tokens (page will be opened)
 
 4. PROFIT!
+
+5. ***If you want to continue request select all output including original prompt***
 ## Notes for prompt
 
 Good prompt: 
