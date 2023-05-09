@@ -15,10 +15,15 @@ export default async (input: string): Promise<string | null> =>{
 		});
 	let response = await promise;
 	if(response.status !== 200){
+		if(response.status === 401){
 		vscode.window.showErrorMessage("Bearer invalid!");
 		vscode.workspace.getConfiguration("starcoderex").update("bearertoken", "", vscode.ConfigurationTarget.Global);
 		updatetoken();
 		return null;
+		}else {
+			vscode.window.showWarningMessage("Service turned off right now. Try later!");
+			updatetoken();
+		}
 	}
 	let output = ((await response.json()) as ResponseModel[])[0].generated_text;
 	console.log(`Output: ${output.length}`);
