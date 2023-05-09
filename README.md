@@ -56,6 +56,8 @@ This extension contributes the following settings:
 
 ## Release Notes
 
+### 1.0.31
+Added error message when reference API is offline
 ### 1.0.22
 Added cancel button
 ### 1.0.2
