@@ -56,6 +56,8 @@ This extension contributes the following settings:
 
 ## Release Notes
 
+### 1.0.4
+Added the ability to change the API URL
 ### 1.0.31
 Added error message when reference API is offline
 ### 1.0.22

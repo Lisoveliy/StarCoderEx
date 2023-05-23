@@ -6,7 +6,7 @@ export default async (input: string): Promise<string | null> =>{
 	//console.log(`Input: ${input}`);
 	let promise: Promise<Response>;
 	try{
-	promise = fetch("https://api-inference.huggingface.co/models/bigcode/starcoder",
+	promise = fetch(vscode.workspace.getConfiguration("starcoderex").get("apiurl") as string,
 		{
 			// eslint-disable-next-line @typescript-eslint/naming-convention
 			headers: { authorization: `Bearer ${vscode.workspace.getConfiguration("starcoderex").get("bearertoken")}`, "content-type": "application/json" },
