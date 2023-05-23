@@ -53,6 +53,7 @@ This extension contributes the following settings:
 
 * `starcoderex.countofrequests`: Set requests count per command (Default: 4. Less count -> less answer, faster loading)
 * `starcoderex.bearertoken`: Set bearer token for API https://huggingface.co
+* `starcoderex.apiurl`: Set custom API Url
 
 ## Release Notes
 
