@@ -57,6 +57,8 @@ This extension contributes the following settings:
 
 ## Release Notes
 
+### 1.0.41
+Republish for fix error on Visual Studio Code Store
 ### 1.0.4
 Added the ability to change the API URL
 ### 1.0.31
