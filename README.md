@@ -27,14 +27,19 @@ Usage:
 4. PROFIT!
 
 5. ***If you want to continue request select all output including original prompt and repeat steps***
+
+## Local running
+
+For local model you can use that application https://github.com/LucienShui/huggingface-vscode-endpoint-server, and enter URL to that server in extension settings
+
 ## Notes for prompt
 
 Good prompt: 
 
                 //POST Request on JSON to url variable
                 //Params: url, object
-                function /* Good variant use Language syntax */
-               
+                function 
+Good variant use Language syntax like "function" from JS
 Result: 
 
 ![image](https://user-images.githubusercontent.com/56991906/236544392-e170c33e-11c4-489a-bf76-004c95f57526.png)
@@ -57,6 +62,8 @@ This extension contributes the following settings:
 
 ## Release Notes
 
+### 1.0.5
+Fixed request for token if selection is empty
 ### 1.0.41
 Republish for fix error on Visual Studio Code Store
 ### 1.0.4

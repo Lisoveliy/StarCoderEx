@@ -22,7 +22,6 @@ export default async (input: string): Promise<string | null> =>{
 		return null;
 		}else {
 			vscode.window.showWarningMessage("Service turned off right now. Try later!");
-			updatetoken();
 		}
 	}
 	let output = ((await response.json()) as ResponseModel[])[0].generated_text;

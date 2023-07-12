@@ -13,6 +13,7 @@ export default async function (){
     let text = editor.document.getText(selection);
     if(text === ""){
         vscode.window.showWarningMessage("Empty selection");
+        return;
     }
     console.log("Prompt: ", text);
     let result: string | null;
