@@ -1,7 +1,5 @@
 import * as vscode from "vscode";
 import request from "../request";
-import { ViewColumn } from "vscode";
-import { CommentMode } from "vscode";
 
 export default async function (){
     const editor = vscode.window.activeTextEditor;
