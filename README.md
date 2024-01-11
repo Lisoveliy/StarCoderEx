@@ -32,6 +32,16 @@ Usage:
 
 For local model you can use that application https://github.com/LucienShui/huggingface-vscode-endpoint-server, and enter URL to that server in extension settings
 
+## Local running (Ollama)
+
+Or use settings for local Ollama, see https://ollama.ai/ (for sample use local ollama in WSL)
+
+    bearertoken = 1 
+    apiurl = http://localhost:11434/api/generate/
+    model = starcoder:7b
+    stream = false | true
+    is_local = true
+
 ## Notes for prompt
 
 Good prompt: 
@@ -59,6 +69,15 @@ This extension contributes the following settings:
 * `starcoderex.countofrequests`: Set requests count per command (Default: 4. Less count -> less answer, faster loading)
 * `starcoderex.bearertoken`: Set bearer token for API https://huggingface.co
 * `starcoderex.apiurl`: Set custom API Url
+
+## Build
+
+cd < StarCodeExPath >
+
+npm install -g @vscode/vsce
+
+vsce package
+
 
 ## Release Notes
 

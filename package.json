@@ -1,6 +1,6 @@
 {
   "name": "starcoderex",
-  "displayName": "StarCoderEx (AI code generator)",
+  "displayName": "StarCoderEx (AI code generator - local Ollama)",
   "description": "Extension for using alternative GitHub Copilot (StarCoder API) in VSCode",
   "repository": "https://github.com/Lisoveliy/starcoderex",
   "icon": "logo.png",
@@ -60,15 +60,27 @@
         "properties": {
           "starcoderex.countofrequests": {
             "type": "integer",
-            "default": 4
+            "default": 1
           },
           "starcoderex.bearertoken": {
             "type": "string",
-            "default": ""
+            "default": "1"
           },
-          "starcoderex.apiurl":{
+          "starcoderex.apiurl": {
             "type": "string",
-            "default": "https://api-inference.huggingface.co/models/bigcode/starcoder"
+            "default": "http://localhost:11434/api/generate/"
+          },
+          "starcoderex.model": {
+            "type": "string",
+            "default": "starcoder:7b"
+          },
+          "starcoderex.stream": {
+            "type": "string",
+            "default": "false"
+          },
+          "starcoderex.is_local": {
+            "type": "string",
+            "default": "true"
           }
         }
       }
